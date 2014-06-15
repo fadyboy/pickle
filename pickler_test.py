@@ -1,5 +1,4 @@
 import unittest
-import pickle
 from pickler import list_pickler, unpickler
 # declare a class for my pickle unit tests
 class PickleTests(unittest.TestCase):
@@ -16,9 +15,9 @@ class PickleTests(unittest.TestCase):
     # test that an object that is pickled and unpickled have the same data
     def pickle_unpickle_equal_test(self):
 
-        my_list = [1, 2]
+        my_list = [1, 2, "sherman Wosely"]
         list_pickler(my_list, self.file_obj)
         another_list = unpickler(self.file_obj)
-        
+
         # check that my_list and another list are equal
         self.assertEqual(True, my_list == another_list)
