@@ -18,7 +18,6 @@ class PickleTests(unittest.TestCase):
     def pickle_unpickle_equal_test(self):
 
         my_list = [1, 2, "sherman Wosely"]
-        #list_pickler(my_list, self.file_obj)
         list_pickler(my_list, self.file_name )
         another_list = unpickler(self.file_name)
 
