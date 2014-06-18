@@ -6,13 +6,12 @@ class PickleTests(unittest.TestCase):
 
     # create a setUp method to always use the following components
     def setUp(self):
-        # create a file object for writing to a file in binary
+        # create a file that is used as the file
         self.file_name = 'test_file'
-        #self.file_obj = file_name
 
     # create a teardown method to close the open file object
     def tearDown(self):
-        #self.file_obj.close()
+        # delete the file after test is run
         del self.file_name
 
     # test that an object that is pickled and unpickled have the same data
