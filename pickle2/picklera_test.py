@@ -7,7 +7,7 @@ class PickleTests(unittest.TestCase):
     # create a setUp method to always use the following components
     def setUp(self):
         # create a file object for writing to a file in binary
-        self.file_name = 'raymond'
+        self.file_name = 'test_file'
         #self.file_obj = file_name
 
     # create a teardown method to close the open file object
