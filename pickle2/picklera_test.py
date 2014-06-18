@@ -1,6 +1,6 @@
 import unittest
-import os
-from pickler import list_pickler, unpickler
+
+from picklera import list_pickler, unpickler
 # declare a class for my pickle unit tests
 class PickleTests(unittest.TestCase):
 
