@@ -15,8 +15,7 @@ def unpickler(pickle_file):
     '''
         This function takes a pickled object and unpickles to a variable
     '''
-    # open picked object in read binary mode which is the parameter parsed in
-    #pickle_file = open('pickle_file', 'rb')
+    # open file passed in read binary mode which is the parameter parsed in
     unpickle_file = open(pickle_file, 'rb')
 
     # # unpickle the pickled object by calling the pickle load() and assign to a variable
